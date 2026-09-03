@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Typing Test | Techno Institute Of Technology</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="typing.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="header">
+
+    <div class="header-content">
+
+        <h1>
+            TECHNO INSTITUTE OF TECHNOLOGY
+        </h1>
+
+        <p>
+            Typing Competition 2026
+        </p>
+
+    </div>
+
+
+    <button id="logoutBtn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </button>
+
+</header>
+
+
+
+<!-- ==========================================
+     MAIN
+========================================== -->
+
+<main class="typing-container">
+
+
+    <!-- ======================================
+         WELCOME
+    ======================================= -->
+
+    <section class="welcome-section">
+
+        <h2 id="username">
+            Welcome, Student
+        </h2>
+
+        <p>
+            Complete the typing challenge with maximum
+            speed and accuracy.
+        </p>
+
+    </section>
+
+
+
+    <!-- ======================================
+         STATISTICS
+    ======================================= -->
+
+    <section class="stats">
+
+
+        <!-- TIME -->
+
+        <div class="stat-box">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>
+                Time
+            </h3>
+
+            <span id="timer">
+                10:00
+            </span>
+
+        </div>
+
+
+
+        <!-- WPM -->
+
+        <div class="stat-box">
+
+            <i class="fa-solid fa-gauge-high"></i>
+
+            <h3>
+                WPM
+            </h3>
+
+            <span id="wpm">
+                0
+            </span>
+
+        </div>
+
+
+
+        <!-- ACCURACY -->
+
+        <div class="stat-box">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <h3>
+                Accuracy
+            </h3>
+
+            <span id="accuracy">
+                100%
+            </span>
+
+        </div>
+
+
+
+        <!-- MISTAKES -->
+
+        <div class="stat-box">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <h3>
+                Mistakes
+            </h3>
+
+            <span id="mistakes">
+                0
+            </span>
+
+        </div>
+
+
+
+        <!-- CHARACTERS -->
+
+        <div class="stat-box">
+
+            <i class="fa-solid fa-keyboard"></i>
+
+            <h3>
+                Characters
+            </h3>
+
+            <span id="characters">
+                0
+            </span>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ======================================
+         TYPING AREA
+    ======================================= -->
+
+    <section class="typing-card">
+
+
+        <!-- PARAGRAPH -->
+
+        <div class="paragraph-title">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            Type the following paragraph
+
+        </div>
+
+
+        <div id="paragraphBox" class="paragraph-box">
+
+            <p id="paragraph">
+                Loading paragraph...
+            </p>
+
+        </div>
+
+
+
+        <!-- TYPING INPUT -->
+
+        <textarea
+            id="typingInput"
+            placeholder="Click Start Test and begin typing..."
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            disabled></textarea>
+
+
+
+        <!-- ==================================
+             ONLY START BUTTON
+        =================================== -->
+
+        <div class="button-area">
+
+            <button
+                id="startBtn"
+                class="btn start">
+
+                <i class="fa-solid fa-play"></i>
+
+                Start Test
+
+            </button>
+
+        </div>
+
+
+        <!-- STATUS -->
+
+        <div id="testStatus" class="test-status">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            Click <strong>Start Test</strong> to begin.
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==========================================
+     RESULT POPUP
+========================================== -->
+
+<div id="resultPopup" class="popup">
+
+
+    <div class="popup-content">
+
+
+        <i class="fa-solid fa-trophy trophy"></i>
+
+
+        <h2>
+            Typing Test Completed
+        </h2>
+
+
+        <p class="result-message">
+            Your performance has been saved successfully.
+        </p>
+
+
+
+        <!-- RESULT GRID -->
+
+        <div class="result-grid">
+
+
+            <div class="result-box">
+
+                <h4>
+                    WPM
+                </h4>
+
+                <span id="finalWPM">
+                    0
+                </span>
+
+            </div>
+
+
+
+            <div class="result-box">
+
+                <h4>
+                    Accuracy
+                </h4>
+
+                <span id="finalAccuracy">
+                    0%
+                </span>
+
+            </div>
+
+
+
+            <div class="result-box">
+
+                <h4>
+                    Mistakes
+                </h4>
+
+                <span id="finalMistakes">
+                    0
+                </span>
+
+            </div>
+
+
+
+            <div class="result-box">
+
+                <h4>
+                    Characters
+                </h4>
+
+                <span id="finalCharacters">
+                    0
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- OK BUTTON -->
+
+        <button id="closePopup">
+
+            <i class="fa-solid fa-check"></i>
+
+            OK
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    © 2026 Techno Institute Of Technology |
+    Typing Competition
+
+</footer>
+
+
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="typing.js"></script>
+
+
+</body>
+
+</html>

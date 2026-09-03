@@ -1,0 +1,356 @@
+/* ===================================
+            RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+   background:linear-gradient(135deg,#081b39,#040d1f);
+
+    display:flex;
+
+    flex-direction:column;
+
+    color:#fff;
+
+}
+
+/* ===================================
+            HEADER
+=================================== */
+
+.header{
+
+    text-align:center;
+
+    padding:28px 20px;
+
+    background:linear-gradient(135deg,#005bea,#003eaa);
+
+    box-shadow:0 5px 18px rgba(0,0,0,.35);
+
+}
+
+.header h1{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.header h2{
+
+    margin-top:8px;
+
+    font-size:22px;
+
+    color:#dbe7ff;
+
+}
+
+/* ===================================
+        ADMIN CONTAINER
+=================================== */
+
+.admin-container{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 20px;
+
+}
+
+/* ===================================
+            CARD
+=================================== */
+
+.admin-card{
+
+    width:100%;
+
+    max-width:430px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+/* ===================================
+            ICON
+=================================== */
+
+.icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#00d4ff,#0066ff);
+
+    font-size:40px;
+
+    color:#fff;
+
+}
+
+/* ===================================
+            TITLE
+=================================== */
+
+.admin-card h2{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+    color:#00f5ff;
+
+}
+
+.admin-card p{
+
+    color:#d6e4ff;
+
+    margin-bottom:30px;
+
+}
+
+/* ===================================
+          INPUT BOX
+=================================== */
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:18px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    height:55px;
+
+    padding:0 50px 0 18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    background:#0e2148;
+
+    color:#fff;
+
+    border:2px solid transparent;
+
+    transition:.3s;
+
+}
+
+.input-box input:focus{
+
+    border-color:#00f5ff;
+
+    box-shadow:0 0 15px rgba(0,245,255,.30);
+
+}
+
+.input-box input::placeholder{
+
+    color:#9eb8de;
+
+}
+
+.input-box i{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#cfdfff;
+
+}
+
+/* ===================================
+        ERROR MESSAGE
+=================================== */
+
+#errorMsg{
+
+    display:block;
+
+    min-height:22px;
+
+    color:#ff5c5c;
+
+    font-size:14px;
+
+    margin-bottom:18px;
+
+}
+
+/* ===================================
+          LOGIN BUTTON
+=================================== */
+
+#loginBtn{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#00bfff,#0066ff);
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#loginBtn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 25px rgba(0,191,255,.35);
+
+}
+
+/* ===================================
+            FOOTER
+=================================== */
+
+.footer{
+
+    width:100%;
+
+    padding:20px;
+
+    text-align:center;
+
+    background:#031126;
+
+    color:#bbb;
+
+    font-size:15px;
+
+}
+
+/* ===================================
+          SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#00bfff;
+
+    border-radius:20px;
+
+}
+
+/* ===================================
+         RESPONSIVE
+=================================== */
+
+@media(max-width:768px){
+
+.header h1{
+
+    font-size:28px;
+
+}
+
+.header h2{
+
+    font-size:18px;
+
+}
+
+.admin-card{
+
+    padding:30px 25px;
+
+}
+
+.admin-card h2{
+
+    font-size:24px;
+
+}
+
+.icon{
+
+    width:75px;
+
+    height:75px;
+
+    font-size:32px;
+
+}
+
+}

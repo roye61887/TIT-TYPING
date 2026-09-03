@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Typing Competition 2026</title>
+
+    <link rel="stylesheet" href="admin-dashboard.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+            HEADER
+=========================== -->
+
+<header class="header">
+
+    <h1>TECHNO INSTITUTE OF TECHNOLOGY</h1>
+
+    <p>Typing Competition 2026</p>
+
+</header>
+
+<!-- ===========================
+            TOP BAR
+=========================== -->
+
+<div class="top-bar">
+
+    <h2>
+
+        <i class="fa-solid fa-user-shield"></i>
+
+        Admin Dashboard
+
+    </h2>
+
+    <button id="logoutBtn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </button>
+
+</div>
+
+<!-- ===========================
+            MAIN CONTAINER
+=========================== -->
+
+<div class="container">
+
+<!-- ===========================
+        STATISTICS BOXES
+=========================== -->
+
+<div class="dashboard">
+
+    <div class="card">
+
+        <i class="fa-solid fa-users"></i>
+
+        <h3>Total Participants</h3>
+
+        <span id="totalParticipants">0</span>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-trophy"></i>
+
+        <h3>Leaderboard</h3>
+
+        <span id="leaderboardCount">0</span>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <h3>Results</h3>
+
+        <span id="resultCount">0</span>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-gauge-high"></i>
+
+        <h3>Average WPM</h3>
+
+        <span id="averageWpm">0</span>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+            SEARCH BOX
+=========================== -->
+
+<div class="search-box">
+
+    <input
+    type="text"
+    id="searchStudent"
+    placeholder="Search Student by Name or Mobile Number">
+
+    <button id="searchBtn">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        Search
+
+    </button>
+
+</div>
+
+<!-- ===========================
+        TABLE START
+=========================== -->
+
+<div class="table-container">
+
+<table id="studentTable">
+
+<thead>
+
+<tr>
+
+<th>Rank</th>
+
+<th>Name</th>
+
+<th>Mobile</th>
+
+<th>WPM</th>
+
+<th>Accuracy</th>
+
+<th>Mistakes</th>
+
+<th>Time</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody">
+<!-- ===========================
+        TABLE BODY
+=========================== -->
+
+<tr>
+
+    <td>1</td>
+
+    <td>Demo Student</td>
+
+    <td>9876543210</td>
+
+    <td>78</td>
+
+    <td>97%</td>
+
+    <td>2</td>
+
+    <td>60 Sec</td>
+
+    <td>
+
+        <button class="deleteBtn">
+
+            <i class="fa-solid fa-trash"></i>
+
+            Delete
+
+        </button>
+
+    </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- ===========================
+        ACTION BUTTONS
+=========================== -->
+
+<div class="action-buttons">
+
+    <button id="pdfBtn">
+
+        <i class="fa-solid fa-file-pdf"></i>
+
+        Export PDF
+
+    </button>
+
+    <button id="excelBtn">
+
+        <i class="fa-solid fa-file-excel"></i>
+
+        Export Excel
+
+    </button>
+
+    <button id="refreshBtn">
+
+        <i class="fa-solid fa-rotate"></i>
+
+        Refresh
+
+    </button>
+
+</div>
+
+<!-- ===========================
+        PARAGRAPH PANEL
+=========================== -->
+
+<div class="paragraph-manager">
+
+    <h2>
+        <i class="fa-solid fa-keyboard"></i>
+        Typing Paragraph Manager
+    </h2>
+
+    <textarea
+        id="paragraphInput"
+        placeholder="Type or Paste Typing Paragraph Here..."></textarea>
+
+    <div class="paragraph-buttons">
+
+        <button id="saveParagraphBtn">
+            <i class="fa-solid fa-floppy-disk"></i>
+            Save Paragraph
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+<!-- ===========================
+            FOOTER
+=========================== -->
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Techno Institute Of Technology |
+        Typing Competition Dashboard
+
+    </p>
+
+</footer>
+
+<script src="admin-dashboard.js"></script>
+
+</body>
+
+</html>

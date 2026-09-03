@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techno Institute of Technology | Typing Competition 2026</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="login-box">
+
+        <h1>TECHNO INSTITUTE OF TECHNOLOGY</h1>
+
+        <h2>Typing Competition 2026</h2>
+
+        <form id="loginForm">
+
+            <!-- Full Name -->
+            <div class="input-group">
+
+                <label>Full Name</label>
+
+                <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+                autocomplete="off">
+
+                <small id="nameError"></small>
+
+            </div>
+
+            <!-- Mobile -->
+            <div class="input-group">
+
+                <label>Mobile Number</label>
+
+                <input
+                type="tel"
+                id="mobile"
+                maxlength="10"
+                placeholder="Enter 10 Digit Mobile Number"
+                autocomplete="off">
+
+                <small id="mobileError"></small>
+
+            </div>
+
+            <!-- Login Button -->
+            <button
+            type="submit"
+            id="loginBtn">
+
+                <span id="btnText">LOGIN</span>
+
+                <span id="loader" class="loader"></span>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- Success Popup -->
+
+<div id="successPopup" class="popup">
+
+    <div class="popup-content">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h3>Login Successful</h3>
+
+        <p>Redirecting to Home Page...</p>
+
+    </div>
+
+</div>
+<!-- =========================
+        FOOTER
+========================= -->
+
+<footer class="footer">
+    <p>
+        © 2026 Techno Institute Of Technology | Typing Competition
+    </p>
+</footer>
+<!-- JavaScript -->
+<script src="login.js"></script>
+
+</body>
+</html>
